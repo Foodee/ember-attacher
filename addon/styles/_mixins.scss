@@ -1,17 +1,17 @@
 @mixin arrow($position, $width) {
   @if ($position == 'top') {
     transform: rotate(-45deg);
-    bottom: -$width * .5;
+    bottom: calc(-$width * .5);
   } @else if ($position == 'bottom') {
     transform: rotate(135deg);
-    top: -$width * .5;
+    top: calc(-$width * .5);
   } @else if ($position == 'left') {
     transform: rotate(225deg);
-    right: -$width * .5;
+    right: calc(-$width * .5);
     top: 50%;
   } @else if ($position == 'right') {
     transform: rotate(45deg);
-    left: -$width * .5;
+    left: calc(-$width * .5);
     top: 50%;
   }
 }
